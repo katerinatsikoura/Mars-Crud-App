@@ -1,4 +1,4 @@
-package com.marscrudapp.marscrud;
+package com.marsdeployment.marscrudapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

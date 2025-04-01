@@ -1,7 +1,8 @@
-package com.marscrudapp.marscrud.repository;
+package com.marsdeployment.marscrudapp.repository;
 
-import com.marscrudapp.marscrud.model.Resource;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.marsdeployment.marscrudapp.model.Resource;
 
 public interface ResourceRepository extends JpaRepository<Resource, Long> {
 }

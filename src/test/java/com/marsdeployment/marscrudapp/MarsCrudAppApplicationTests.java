@@ -1,4 +1,4 @@
-package com.marsdeployment.marscrud;
+package com.marsdeployment.marscrudapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
