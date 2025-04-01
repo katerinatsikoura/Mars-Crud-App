@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Space Station Resources</title>
+</head>
+<body>
+    <h1>Resource List</h1>
+    <a href="/resources/add">Add New Resource</a>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="resource : ${resources}">
+                <td th:text="${resource.id}"></td>
+                <td th:text="${resource.name}"></td>
+                <td th:text="${resource.quantity}"></td>
+                <td>
+                    <a th:href="@{/resources/edit/{id}(id=${resource.id})}">Edit</a>
+                    <a th:href="@{/resources/delete/{id}(id=${resource.id})}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+

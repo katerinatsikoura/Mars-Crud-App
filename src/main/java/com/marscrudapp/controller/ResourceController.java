@@ -1,11 +1,12 @@
-package com.marsdeployment.marscrudapp.controller;
+package com.marscrudapp.controller;
 
-import com.marsdeployment.marscrudapp.model.Resource;
-import com.marsdeployment.marscrudapp.repository.ResourceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import com.marscrudapp.model.Resource;
+import com.marscrudapp.repository.ResourceRepository;
 
 @Controller
 @RequestMapping("/resources")

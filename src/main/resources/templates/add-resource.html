@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Resource</title>
+</head>
+<body>
+    <h1>Add a New Resource</h1>
+    <form th:action="@{/resources/add}" th:object="${resource}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" th:field="*{name}" id="name" required/>
+        <label for="quantity">Quantity:</label>
+        <input type="number" th:field="*{quantity}" id="quantity" required/>
+        <button type="submit">Add Resource</button>
+    </form>
+    <a href="/resources">Back to Resources</a>
+</body>
+</html>
