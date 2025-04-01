@@ -1,4 +1,4 @@
-package com.marsdeployment.marscrud.model;
+package com.marscrudapp.marscrud.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
