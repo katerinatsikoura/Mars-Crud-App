@@ -20,5 +20,3 @@ This repository contains a simple Spring Boot CRUD application called "Mars Crud
 
 ## License
 This code is provided for educational purposes only.
-
-check
