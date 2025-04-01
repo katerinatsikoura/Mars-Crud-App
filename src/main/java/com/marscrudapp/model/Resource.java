@@ -29,7 +29,8 @@ public class Resource {
     /**
     * Default constructor declaration.
     */
-    public Resource() {}
+    public Resource() {
+    }
 
     /**
     * Core constructor.
