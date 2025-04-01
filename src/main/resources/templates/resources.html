@@ -2,10 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Space Station Resources</title>
+    <style>
+        h1, p { text-align: center; }
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #ffdbd0; }
+    </style>
 </head>
 <body>
-    <h1>Resource List</h1>
-    <a href="/resources/add">Add New Resource</a>
+    <h1>Mars Crud App - Resource List</h1>
+    <p><a href="/resources/add">Add New Resource</a></p>
     <table>
         <thead>
             <tr>
