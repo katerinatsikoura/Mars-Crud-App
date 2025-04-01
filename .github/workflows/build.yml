@@ -36,6 +36,20 @@ jobs:
       - name: Run Integration Tests
         run: mvn verify
 
+      - name: Check Docker Installation
+        run: docker --version
+
+      - name: Verify Dockerfile Exists
+        run: ls -la
+
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build Docker Image
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/productly:latest -f Dockerfile .
+
+      - name: Push Docker Image
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/productly:latest
   deploy:
     needs: build
     runs-on: ubuntu-latest
